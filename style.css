@@ -1,0 +1,718 @@
+/* ==============================
+   GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f8f2;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+header {
+    width: 100%;
+    padding: 18px 7%;
+    background-color: #2e7d32;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #dcedc8;
+}
+
+
+/* ==============================
+   HERO
+================================= */
+
+.hero {
+    min-height: 500px;
+
+    background:
+        linear-gradient(
+            rgba(20, 70, 25, 0.65),
+            rgba(20, 70, 25, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background-color: #8bc34a;
+    color: white;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #689f38;
+}
+
+
+/* ==============================
+   ABOUT
+================================= */
+
+.about {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.about h2,
+.products h2,
+.donate h2 {
+    font-size: 32px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.about > p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: white;
+    padding: 25px;
+
+    width: 280px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.feature h3 {
+    color: #388e3c;
+    margin-bottom: 12px;
+}
+
+.feature p {
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   PRODUCTS
+================================= */
+
+.products {
+    padding: 60px 7%;
+    background-color: #edf5e8;
+    text-align: center;
+}
+
+.product-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.product-card {
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.product-card span {
+    display: block;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #e65100;
+
+    margin-bottom: 15px;
+}
+
+.product-card button,
+.donate button {
+    border: none;
+
+    background-color: #2e7d32;
+    color: white;
+
+    padding: 11px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.product-card button:hover,
+.donate button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* ==============================
+   DONATE
+================================= */
+
+.donate {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.donate p {
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+footer {
+    background-color: #1b5e20;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* ==============================
+   LOGIN / REGISTRATION
+================================= */
+
+.auth-body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+.auth-box {
+    background-color: white;
+
+    width: 100%;
+    max-width: 450px;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+    text-align: center;
+
+    color: #2e7d32;
+
+    margin-bottom: 10px;
+}
+
+.auth-subtitle {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box label {
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.auth-box input,
+.auth-box select {
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+.auth-box input:focus,
+.auth-box select:focus {
+    outline: none;
+
+    border-color: #2e7d32;
+}
+
+.remember {
+    margin-bottom: 15px;
+}
+
+.remember label {
+    font-weight: normal;
+}
+
+.remember input {
+    margin-right: 5px;
+}
+
+.auth-btn {
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    background-color: #1b5e20;
+}
+
+.account-link {
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #666;
+}
+
+.account-link a {
+    color: #2e7d32;
+
+    font-weight: bold;
+}
+
+
+/* ==============================
+   CART
+================================= */
+
+.cart-section {
+    padding: 50px 7%;
+
+    min-height: 650px;
+}
+
+.cart-section > h1 {
+    text-align: center;
+
+    color: #2e7d32;
+
+    margin-bottom: 35px;
+}
+
+.cart-container {
+    max-width: 850px;
+
+    margin: auto;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+
+    padding: 20px;
+}
+
+.cart-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 20px 10px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-icon {
+    font-size: 50px;
+}
+
+.cart-details {
+    flex: 1;
+}
+
+.cart-details h3 {
+    color: #2e7d32;
+
+    margin-bottom: 7px;
+}
+
+.cart-details p {
+    color: #777;
+}
+
+.quantity {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.quantity button {
+    width: 30px;
+    height: 30px;
+
+    border: none;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.quantity span {
+    font-weight: bold;
+}
+
+.cart-summary {
+    max-width: 400px;
+
+    margin: 30px auto;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.cart-summary h2 {
+    color: #2e7d32;
+
+    margin-bottom: 20px;
+}
+
+.summary-row,
+.summary-total {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+
+.summary-total {
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.checkout-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #2e7d32;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    margin-top: 10px;
+}
+
+.checkout-btn:hover {
+    background-color: #1b5e20;
+}
+
+.continue-shopping {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 15px;
+
+    color: #2e7d32;
+
+    font-weight: bold;
+}
+
+
+/* ==============================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cart-item {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .about h2,
+    .products h2,
+    .donate h2 {
+        font-size: 26px;
+    }
+
+    .auth-box {
+        padding: 25px 20px;
+    }
+
+}
+
+/* =====================================================
+   DASHBOARD STYLES
+   ===================================================== */
+
+.dashboard {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard h1 {
+    margin-bottom: 10px;
+}
+
+.dashboard > p {
+    margin-bottom: 30px;
+}
+
+
+/* Dashboard Cards */
+
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 700px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+    text-align: left;
+}
+
+
+.dashboard-card h2 {
+    margin-bottom: 20px;
+}
+
+
+.dashboard-card p {
+    margin: 12px 0;
+}
+
+
+/* Dashboard Buttons */
+
+.dashboard-btn {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    margin: 10px 5px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+
+/* Header Logout Button */
+
+header nav button {
+    padding: 8px 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}

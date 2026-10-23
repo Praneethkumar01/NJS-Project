@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - Community Food Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+    <!-- Header -->
+    <header>
+        <div class="logo">🌱 Community Food Bank</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+
+    <!-- Registration Section -->
+    <div class="auth-container">
+
+        <div class="auth-box">
+
+            <h2>Create Account</h2>
+
+            <p class="auth-subtitle">
+                Register for the Community Food Bank
+            </p>
+
+
+            <!-- Registration Form -->
+            <form id="registrationForm">
+
+                <!-- Full Name -->
+                <label for="name">Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- Email -->
+                <label for="email">Email Address</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- Phone -->
+                <label for="phone">Phone Number</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+
+                <!-- User Type -->
+                <label for="role">User Type</label>
+
+                <select id="role" name="role" required>
+
+                    <option value="">Select your role</option>
+
+                    <option value="Community Member">
+                        Community Member
+                    </option>
+
+                    <option value="Farmer">
+                        Farmer
+                    </option>
+
+                    <option value="Food Donor">
+                        Food Donor
+                    </option>
+
+                    <option value="Volunteer">
+                        Volunteer
+                    </option>
+
+                </select>
+
+
+                <!-- Password -->
+                <label for="password">Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Create a password"
+                    required
+                >
+
+
+                <!-- Confirm Password -->
+                <label for="confirmPassword">Confirm Password</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Re-enter your password"
+                    required
+                >
+
+
+                <!-- Message -->
+                <p id="registrationMessage"></p>
+
+
+                <!-- Register Button -->
+                <button
+                    type="submit"
+                    class="auth-btn"
+                >
+                    Register
+                </button>
+
+            </form>
+
+
+            <!-- Login Link -->
+            <p class="account-link">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login here
+                </a>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Community Food Bank</p>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

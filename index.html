@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Food Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌱 Community Food Bank</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#food">Food</a>
+        <a href="#about">About</a>
+        <a href="cart.html">🛒 Cart</a>
+        <a href="login.html">Login</a>
+
+        <span class="user-display">
+    👤 <span class="logged-user-name"></span>
+</span>
+
+<button onclick="logoutUser()">
+    Logout
+</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Community Food Bank</h1>
+
+        <p>
+            Connecting surplus food with communities while
+            promoting zero-waste agriculture.
+        </p>
+
+        <a href="#food" class="btn">Explore Food</a>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Our System</h2>
+
+    <p>
+        Our Community Food Bank and Zero-Waste Agriculture Management
+        System helps reduce food waste by connecting farmers,
+        food donors and communities.
+    </p>
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>🥕 Reduce Food Waste</h3>
+            <p>Surplus food can be distributed instead of being wasted.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🌾 Support Farmers</h3>
+            <p>Farmers can donate or list excess agricultural products.</p>
+        </div>
+
+        <div class="feature">
+            <h3>🤝 Help Communities</h3>
+            <p>People can access available food at affordable prices.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="food" class="products">
+
+    <section id="food" class="products">
+
+    <h2>Available Food</h2>
+
+    <div class="product-container">
+
+        <!-- CARROTS -->
+
+        <div class="product-card">
+
+            <div class="product-image">🥕</div>
+
+            <h3>Fresh Carrots</h3>
+
+            <p>Fresh surplus carrots from local farms.</p>
+
+            <span>₹30 / kg</span>
+
+            <button
+                class="add-to-cart"
+                onclick="addToCart('Fresh Carrots', 30, '🥕')">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- TOMATOES -->
+
+        <div class="product-card">
+
+            <div class="product-image">🍅</div>
+
+            <h3>Fresh Tomatoes</h3>
+
+            <p>Fresh tomatoes collected from farmers.</p>
+
+            <span>₹25 / kg</span>
+
+            <button
+                class="add-to-cart"
+                onclick="addToCart('Fresh Tomatoes', 25, '🍅')">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- POTATOES -->
+
+        <div class="product-card">
+
+            <div class="product-image">🥔</div>
+
+            <h3>Potatoes</h3>
+
+            <p>Good quality surplus potatoes.</p>
+
+            <span>₹28 / kg</span>
+
+            <button
+                class="add-to-cart"
+                onclick="addToCart('Potatoes', 28, '🥔')">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+
+        <!-- RICE -->
+
+        <div class="product-card">
+
+            <div class="product-image">🌾</div>
+
+            <h3>Rice</h3>
+
+            <p>Locally collected surplus rice.</p>
+
+            <span>₹50 / kg</span>
+
+            <button
+                class="add-to-cart"
+                onclick="addToCart('Rice', 50, '🌾')">
+
+                Add to Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="donate">
+    <h2>Have Extra Food?</h2>
+
+    <p>
+        Don't throw away surplus food. Donate it and help someone
+        in your community.
+    </p>
+
+    <button>Donate Food</button>
+</section>
+
+<footer>
+    <p>© 2026 Community Food Bank | Zero-Waste Agriculture</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

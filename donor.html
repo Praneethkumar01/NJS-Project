@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Food Donor Dashboard - Community Food Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            🌱 Community Food Bank
+        </div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <button onclick="logoutUser()">
+                Logout
+            </button>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- Dashboard -->
+    <main class="dashboard">
+
+        <h1 class="welcome-user">
+            Welcome!
+        </h1>
+
+        <p>
+            You are logged in as a
+            <strong id="userRole">Food Donor</strong>.
+        </p>
+
+
+        <!-- Account -->
+        <div class="dashboard-card">
+
+    <h2>My Account</h2>
+
+    <p>
+        <strong>Name:</strong>
+        <span class="logged-user-name"></span>
+    </p>
+
+    <p>
+        <strong>Email:</strong>
+        <span class="logged-user-email"></span>
+    </p>
+
+    <p>
+        <strong>Role:</strong>
+        <span class="logged-user-role"></span>
+    </p>
+
+</div>
+
+
+        <!-- Donor Services -->
+        <div class="dashboard-card">
+
+            <h2>Food Donation</h2>
+
+            <p>
+                Donate surplus food and help reduce food waste
+                in your community.
+            </p>
+
+
+            <button
+                class="dashboard-btn"
+                onclick="alert('Food donation form coming soon!')"
+            >
+                Donate Food
+            </button>
+
+
+            <button
+                class="dashboard-btn"
+                onclick="alert('Donation history coming soon!')"
+            >
+                Donation History
+            </button>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Community Food Bank
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

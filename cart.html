@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart - Community Food Bank</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🌱 Community Food Bank</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#food">Food</a>
+        <a href="login.html">Login</a>
+
+        <span class="user-display">
+    👤 <span class="logged-user-name"></span>
+</span>
+
+<button onclick="logoutUser()">
+    Logout
+</button>
+    </nav>
+</header>
+
+<section class="cart-section">
+
+    <h1>Your Food Cart 🛒</h1>
+
+    <div class="cart-container">
+        <!-- Cart items will be added here by JavaScript -->
+    </div>
+
+    <div class="cart-summary">
+
+    <h2>Order Summary</h2>
+
+    <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">₹0</span>
+    </div>
+
+    <div class="summary-row">
+        <span>Delivery</span>
+        <span id="cartDelivery">₹0</span>
+    </div>
+
+    <hr>
+
+    <div class="summary-total">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+    </div>
+
+    <button
+        class="checkout-btn"
+        onclick="checkout()"
+    >
+        Proceed to Checkout
+    </button>
+
+    <a
+        href="index.html"
+        class="continue-shopping"
+    >
+        ← Continue Shopping
+    </a>
+
+</div>
+
+</section>
+
+<footer>
+    <p>© 2026 Community Food Bank | Zero-Waste Agriculture</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
