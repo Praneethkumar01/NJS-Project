@@ -417,6 +417,43 @@ function logoutUser() {
         "login.html";
 
 }
+/* =========================================================
+   NAVBAR: SHOW / HIDE ITEMS BASED ON LOGIN STATE
+   ========================================================= */
+
+function updateNavbar() {
+
+    const user = getCurrentUser();
+    const isLoggedIn = user !== null;
+
+    /* Login link: only when logged OUT */
+    document
+        .querySelectorAll('nav a[href="login.html"]')
+        .forEach(function (link) {
+            link.style.display = isLoggedIn ? "none" : "";
+        });
+
+    /* Register link: only when logged OUT */
+    document
+        .querySelectorAll('nav a[href="registration.html"]')
+        .forEach(function (link) {
+            link.style.display = isLoggedIn ? "none" : "";
+        });
+
+    /* User name display: only when logged IN */
+    document
+        .querySelectorAll(".user-display")
+        .forEach(function (el) {
+            el.style.display = isLoggedIn ? "" : "none";
+        });
+
+    /* Logout button: only when logged IN */
+    document
+        .querySelectorAll('nav button[onclick="logoutUser()"]')
+        .forEach(function (btn) {
+            btn.style.display = isLoggedIn ? "" : "none";
+        });
+}
 
 
 
@@ -813,6 +850,8 @@ document.addEventListener(
         displayCart();
 
         displayCurrentUser();
+
+        updateNavbar();   // <-- added
 
     }
 );
